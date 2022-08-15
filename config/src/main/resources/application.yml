@@ -1,0 +1,16 @@
+server:
+ port: 8090
+
+spring:
+ application:
+   name: config
+ profiles:
+  active:
+    - native  
+
+eureka:
+ client:
+    serviceUrl:
+      defaultZone: http://localhost:8097/eureka # kendini discovery server'e register etmesi gerekiyor. Nereden bulacak 
+                                                # discovery server'i ? işte bu url'den bulacak. dikkat ettiysek port 8097,
+                                                # yani discovery server'in çalıştığı port

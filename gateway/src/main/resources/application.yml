@@ -1,0 +1,12 @@
+
+server:
+  port: 8085
+  
+spring:
+ application:
+  name: gateway  # bu dosya ismiyle, config klasörü altında new file gateway.yml oluşturmam lazım. dosya ismi aynı dikkat
+
+ config:
+  import: optional:configserver:http://localhost:8090 #config bilgilerini, bu portta çalışan config server'dan al diyorum
+                                                      #fakat config'imnde gateway ile ilgili henüz bir ayar yok. src/main/resource
+                                                      #altında new folder/config -> new file/gateway.yml açıp onu ayarlayacağım
