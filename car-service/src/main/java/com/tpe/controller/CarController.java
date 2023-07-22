@@ -25,7 +25,7 @@ import lombok.AllArgsConstructor;
 public class CarController {
 	
 /* !!!!!! ALL REQUEST MUST BE THROUGH API GATEWAY WHICH IS WORKING ON PORT 8085  NO MATTER WHAT SERVICE YOU WANT TO REACH !!!!! */
-
+//maindeki değişiklik
 	private CarService carService;
 	//----------------------CREATE A CAR ------------------------------------------------
 	@PostMapping
